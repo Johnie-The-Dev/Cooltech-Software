@@ -3,89 +3,309 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- SEO Meta Tags -->
     <title>Cooltech Software - Innovative Software Solutions</title>
-    <meta name="description" content="Cooltech Software provides cutting-edge SaaS products, AI solutions, and custom web development services.">
-    <meta name="keywords" content="Software Development, SaaS, AI Solutions, Web Development, Custom Software">
-    <meta name="author" content="Cooltech Software">
-
-     <!-- Open Graph (For Social Media) -->
-     <meta property="og:title" content="Cooltech Software">
-     <meta property="og:description" content="Innovative software solutions tailored for your business needs.">
-     <meta property="og:image" content="https://cooltechsoftware.com/images/og-image.jpg">
-     <meta property="og:url" content="https://cooltechsoftware.com">
-     <meta property="og:type" content="website">
-
-      <!-- Favicon -->
-    <link rel="icon" href="https://cooltechsoftware.com/images/favicon.ico">
- 
-    
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-
+    <meta name="description" content="Cooltech Software, led by John Ndung'u, provides cutting-edge SaaS products, AI solutions, and custom web development services.">
+    <meta name="keywords" content="Software Development, SaaS, AI Solutions, Web Development, Custom Software, John Ndung'u, Cooltech Software">
+    <meta name="author" content="John Ndung'u">
+    <meta property="og:title" content="Cooltech Software - Innovative Software Solutions" />
+    <meta property="og:description" content="Empowering your ideas with modern technology. Custom software, web solutions, and cybersecurity by John Ndung'u. Beautiful, secure, and scalable digital experiences for individuals and organizations." />
+    <meta property="og:image" content="https://cooltechsoftware.com/Images/og-image.jpg" />
+    <meta property="og:url" content="https://cooltechsoftware.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Cooltech Software" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cooltech Software - Innovative Software Solutions" />
+    <meta name="twitter:description" content="Empowering your ideas with modern technology. Custom software, web solutions, and cybersecurity by John Ndung'u." />
+    <meta name="twitter:image" content="https://cooltechsoftware.com/Images/og-image.jpg" />
+    <meta itemprop="name" content="Cooltech Software - Innovative Software Solutions" />
+    <meta itemprop="description" content="Empowering your ideas with modern technology. Custom software, web solutions, and cybersecurity by John Ndung'u." />
+    <meta itemprop="image" content="https://cooltechsoftware.com/Images/og-image.jpg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
+    <link rel="icon" href="Images/favicon.ico">
+    <link rel="manifest" href="Images/site.webmanifest">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
       body {
-        background: linear-gradient(to right, #1e3c72, #2a5298);
-        color: white;
+        font-family: 'Roboto', Arial, sans-serif;
+        background: linear-gradient(120deg, #10131a 0%, #232b3a 100%);
+        color: #e3e6ee;
+        min-height: 100vh;
+        font-size: 1.08rem;
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
       }
-      .gradient-section {
-        background: linear-gradient(to right, #6a11cb, #2575fc);
-        color: white;
-        padding: 50px 0;
+      img, picture, video, canvas, svg {
+        display: block;
+        max-width: 100%;
+        height: auto;
       }
-      .card {
-        border: none;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        margin-bottom: 20px;
-        background: linear-gradient(to right, #654ea3, #eaafc8);
-        color: white;
+      *, *::before, *::after {
+        box-sizing: border-box;
+      }
+      .container, .about-section {
+        width: 100%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
       }
       .navbar {
-        background: rgba(0, 0, 0, 0.8);
-        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        background: #161b22;
+        border-bottom: 2px solid #203a43;
+        box-shadow: 0 2px 12px rgba(0,195,255,0.10);
+        font-size: 1.08rem;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+      }
+      .navbar .navbar-brand img {
+        height: 40px;
+        width: auto;
+        max-width: 120px;
+        object-fit: contain;
+        image-rendering: auto;
+      }
+      .navbar .nav-link {
+        color: #e3e6ee !important;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        transition: color 0.2s, background 0.2s;
+        border-radius: 8px;
+        padding: 0.6rem 1.2rem !important;
+        margin: 0.1rem 0.2rem;
+      }
+      .navbar .nav-link:focus {
+        outline: 2px solid #00c3ff;
+        outline-offset: 2px;
+      }
+      .navbar .nav-link:hover, .navbar .nav-link.active {
+        color: #fff !important;
+        background: linear-gradient(90deg, #00c3ff 0%, #654ea3 100%);
+      }
+      .btn-hero, .btn-gradient {
+        background: linear-gradient(90deg, #00c3ff 0%, #654ea3 100%);
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        font-weight: 600;
+        padding: 14px 36px;
+        font-size: 1.15rem;
+        box-shadow: 0 4px 16px rgba(0,195,255,0.10);
+        transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+        min-width: 44px;
+        min-height: 44px;
+        will-change: transform, box-shadow;
+      }
+      .btn-hero:focus, .btn-gradient:focus {
+        outline: 2px solid #00c3ff;
+        outline-offset: 2px;
+      }
+      .btn-hero:hover, .btn-gradient:hover {
+        background: linear-gradient(90deg, #654ea3 0%, #00c3ff 100%);
+        color: #fff;
+        box-shadow: 0 6px 24px rgba(0,195,255,0.18);
+        transform: translateY(-2px) scale(1.03);
+      }
+      .gradient-section {
+        background: linear-gradient(120deg, #181f2a 0%, #232b3a 100%);
+        color: #fff;
+        padding: 60px 0 40px 0;
+        border-radius: 0 0 32px 32px;
+        box-shadow: 0 8px 32px rgba(0,195,255,0.07);
       }
       .hero-text {
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-shadow: 2px 2px 12px rgba(0,195,255,0.10);
       }
-      .card img {
-        height: 200px;
+      .section-title {
+        font-size: 2.2rem;
+        font-weight: 800;
+        color: #00c3ff;
+        margin-bottom: 2rem;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+      }
+      .about-section {
+        background: #181f2a;
+        border-radius: 24px;
+        box-shadow: 0 4px 24px rgba(0,195,255,0.07);
+        padding: 40px 16px 24px 16px;
+        margin-bottom: 36px;
+      }
+      .about-section .card {
+        background: #232b3a;
+        color: #e3e6ee;
+        border-radius: 20px;
+        box-shadow: 0 2px 12px rgba(0,195,255,0.06);
+      }
+      .about-section .card-title {
+        color: #00c3ff;
+        font-weight: 700;
+      }
+      .about-section img {
+        border-radius: 50%;
+        border: 5px solid #00c3ff77;
+        box-shadow: 0 4px 32px rgba(0,195,255,0.18);
+        background: #232b3a;
+        width: 160px;
+        height: 160px;
         object-fit: cover;
+        image-rendering: auto;
+      }
+      .card-modern {
+        position: relative;
+        overflow: hidden;
+        background: rgba(35, 43, 58, 0.92);
+        backdrop-filter: blur(8px);
+        border-radius: 26px;
+        box-shadow: 0 8px 32px rgba(0,195,255,0.13), 0 2px 12px rgba(101,78,163,0.10);
+        transition: transform 0.18s, box-shadow 0.18s;
+        margin-bottom: 1.5rem;
+        will-change: transform, box-shadow;
+      }
+      .card-modern:hover {
+        transform: translateY(-6px) scale(1.025);
+        box-shadow: 0 16px 48px rgba(0,195,255,0.18), 0 4px 16px rgba(101,78,163,0.13);
+      }
+      .card-modern .card-img-top {
+        border-radius: 26px 26px 0 0;
+        height: 180px;
+        object-fit: cover;
+        border-bottom:2px solid #00c3ff;
+        width: 100%;
+        max-width: 100%;
+        image-rendering: auto;
+      }
+      .card-modern .card-body {
+        background: rgba(24, 31, 42, 0.82);
+        border-radius: 0 0 26px 26px;
+        box-shadow: 0 2px 8px rgba(0,195,255,0.04);
+        padding: 1.2rem 1rem 1.2rem 1rem;
+      }
+      .card-modern .btn-gradient {
+        box-shadow: 0 2px 8px rgba(0,195,255,0.10);
+        font-size: 1.08rem;
+        min-width: 44px;
+        min-height: 44px;
+      }
+      .footer {
+        background: #161b22;
+        color: #e3e6ee;
+        padding: 24px 0 10px 0;
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+        border-radius: 24px 24px 0 0;
+        box-shadow: 0 -2px 12px rgba(0,195,255,0.07);
+      }
+      .footer a {
+        color: #00c3ff;
+        text-decoration: underline;
+        font-size: 1.05rem;
+        padding: 0.2rem 0.5rem;
+      }
+      .footer a:focus {
+        outline: 2px solid #00c3ff;
+        outline-offset: 2px;
+      }
+      /* Mobile-first adjustments */
+      @media (max-width: 900px) {
+        .section-title {
+          font-size: 1.5rem;
+        }
+        .about-section {
+          padding: 24px 6px 12px 6px;
+        }
+        .about-section img {
+          width: 120px;
+          height: 120px;
+        }
+        .card-modern .card-img-top {
+          height: 120px;
+        }
+        .card-modern {
+          margin-bottom: 1.2rem;
+        }
+      }
+      @media (max-width: 700px) {
+        .container, .about-section {
+          padding: 0.5rem 0.2rem;
+        }
+        .section-title {
+          font-size: 1.2rem;
+        }
+        .about-section {
+          padding: 16px 2px 8px 2px;
+        }
+        .about-section img {
+          width: 90px;
+          height: 90px;
+        }
+        .card-modern .card-img-top {
+          height: 90px;
+        }
+        .card-modern {
+          margin-bottom: 0.8rem;
+        }
+        .btn-hero, .btn-gradient {
+          padding: 12px 18px;
+          font-size: 1rem;
+        }
+        .footer {
+          font-size: 0.95rem;
+          padding: 12px 0 6px 0;
+        }
+      }
+      @media (max-width: 500px) {
+        .navbar .navbar-brand img {
+          height: 32px;
+        }
+        .about-section img {
+          width: 60px;
+          height: 60px;
+        }
+        .card-modern .card-img-top {
+          height: 60px;
+        }
+        .btn-hero, .btn-gradient {
+          padding: 10px 10px;
+          font-size: 0.95rem;
+        }
+      }
+      /* Improve focus for accessibility */
+      a:focus, button:focus, .btn:focus {
+        outline: 2px solid #00c3ff;
+        outline-offset: 2px;
       }
     </style>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top" style="background: linear-gradient(90deg, #181f2a 60%, #00c3ff 100%); border-bottom: none;" aria-label="Main Navigation">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="Images/Logo.jpg" alt="CoolTech Software Logo" height="50" />
+        <a class="navbar-brand d-flex align-items-center" href="#" style="gap:10px;">
+          <img src="Images/Logo.jpg" alt="CoolTech Software Logo" height="44" width="120" style="border-radius:8px; box-shadow:0 2px 8px rgba(0,195,255,0.10); object-fit:contain; image-rendering:auto;" loading="lazy" decoding="async" />
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav align-items-center" style="gap:10px;">
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link px-3" href="#about" style="color:#e3e6ee; font-weight:500;">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services-products"
-                >Services & Products</a
-              >
+              <a class="nav-link px-3" href="#services-products" style="color:#e3e6ee; font-weight:500;">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link px-3" href="cyberSecurityForDummies.html" style="color:#e3e6ee; font-weight:500;">Cybersecurity101</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-hero px-4 py-2 ms-2" href="#contact" style="font-size:1rem;">Contact</a>
             </li>
           </ul>
         </div>
@@ -95,64 +315,56 @@
     <!-- Hero Section -->
     <section class="text-center py-5 gradient-section">
       <div class="container">
-        <h2 class="display-4 fw-bold hero-text">
-          Innovating the Future with Software
-        </h2>
-        <p class="lead hero-text">
-          Empowering humanity with cutting-edge technology solutions.
+        <h1 class="display-4 fw-bold hero-text mb-3" style="color:#00c3ff; letter-spacing:1px;">Empowering Your Digital Ambitions</h1>
+        <p class="lead hero-text mb-3" style="font-size:1.25rem; color:#b0c4d8; max-width:700px; margin:auto;">
+          Cooltech Software delivers secure, scalable, and beautifully engineered technology solutions for forward-thinking businesses and professionals. Experience a partnership built on expertise, transparency, and results.
         </p>
-        <p class="hero-text">
-          We craft digital experiences that are not just functional but
-          revolutionary. Our goal is to lead in AI, web, and mobile development.
+        <p class="hero-text mb-0" style="font-size:1.08rem; color:#e3e6ee; max-width:650px; margin:auto;">
+          From custom software and SaaS platforms to robust cybersecurity, I help you achieve your goals with clarity and confidence—every step of the way.
         </p>
-        <a href="#contact" class="btn btn-light btn-lg mt-3">Get in Touch</a>
       </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-5 text-center">
+    <section id="about" class="py-5 about-section text-center">
       <div class="container">
-        <h2 class="fw-bold">About Us</h2>
-        <div class="row">
-          <div class="col-12">
-            <div class="card p-3">
+        <h2 class="section-title mb-4" style="font-size:2.5rem; letter-spacing:1.5px; color:#00c3ff; text-transform:uppercase;">About</h2>
+        <div class="row justify-content-center align-items-center flex-lg-row flex-column-reverse">
+          <div class="col-12 col-lg-7 mb-4">
+            <div class="card p-5 h-100 text-start border-0" style="background: linear-gradient(120deg, #232b3a 80%, #00c3ff22 100%); border-radius: 24px; box-shadow: 0 8px 40px rgba(0,195,255,0.13);">
               <div class="card-body">
-                <h4 class="card-title">Our Story</h4>
-                <p class="card-text">
-                  Cooltech Software was founded with a vision to create
-                  cutting-edge digital solutions that simplify and transform the
-                  way businesses operate. Built on a passion for technology and
-                  innovation, Cooltech Software is committed to developing
-                  high-quality software that meets real-world needs. From
-                  intuitive web platforms to AI-driven solutions, the goal has
-                  always been to push the boundaries of what's possible in the
-                  digital landscape. With a relentless pursuit of excellence,
-                  Cooltech Software continues to grow, delivering powerful and
-                  scalable solutions tailored to the evolving demands of the
-                  modern world.
+                <h3 class="card-title mb-3" style="color:#00c3ff; font-size:2rem; font-weight:700; letter-spacing:0.5px;">Your Trusted Technology Partner</h3>
+                <hr style="border-top:1px solid #23304a; margin:0.5rem 0 1.2rem 0;">
+                <p class="card-text" style="font-size:1.15rem; color:#e3e6ee; line-height:1.8;">
+                  <strong>Cooltech Software</strong>, founded and led by <span style="color:#00c3ff; font-weight:600;">John Ndung'u</span>, delivers advanced, secure, and beautifully engineered digital solutions. With a proven track record in software development and cybersecurity, I combine technical excellence with a personal, client-focused approach.<br><br>
+                  My mission is to empower organizations and individuals through technology that is reliable, scalable, and easy to use. I take the time to understand your objectives and challenges, ensuring every solution is tailored for real business impact and long-term growth.
+                  <br><br>
+                  From custom web platforms and SaaS products to robust cybersecurity, you benefit from direct collaboration, transparent communication, and a commitment to your success at every stage.
                 </p>
+                <div class="d-flex align-items-center mt-4" style="gap:1.2rem;">
+                  <span style="font-style:italic; color:#00c3ff; font-size:1.13rem;">“Excellence in technology is about understanding people, not just code. Let's build something that truly matters.”</span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-12">
-            <div class="card p-3">
-              <div class="card-body">
-                <h4 class="card-title">Vision</h4>
-                <p class="card-text">
-                  We aim to be a leading force in software innovation, expanding
-                  our team and capabilities.
-                </p>
-              </div>
+          <div class="col-12 col-lg-5 mb-4 d-flex justify-content-center align-items-center">
+            <div style="background: linear-gradient(135deg, #00c3ff55 0%, #232b3a 100%); padding: 22px; border-radius: 50%; box-shadow: 0 8px 40px rgba(0,195,255,0.18);">
+              <img src="Images/Me.jpg" alt="Portrait of John Ndung'u, founder of Cooltech Software" style="width: 220px; height: 220px; object-fit:cover; border-radius: 50%; border: 5px solid #00c3ff77; box-shadow: 0 4px 32px rgba(0,195,255,0.18); background: #232b3a; image-rendering:auto;" width="220" height="220" loading="lazy" decoding="async" />
             </div>
           </div>
-          <div class="col-12">
-            <div class="card p-3">
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-12 col-lg-10 mb-4">
+            <div class="card p-4 h-100 text-start border-0" style="background: linear-gradient(90deg, #232b3a 80%, #00c3ff22 100%); border-radius: 18px; box-shadow: 0 2px 12px rgba(0,195,255,0.08);">
               <div class="card-body">
-                <h4 class="card-title">Mission</h4>
-                <p class="card-text">
-                  Developing next-gen software solutions that address evolving
-                  global digital demands.
-                </p>
+                <h4 class="card-title" style="color:#00c3ff; font-size:1.25rem; font-weight:600;">Why Partner with Cooltech Software?</h4>
+                <ul style="font-size:1.08rem; color:#b0c4d8; line-height:1.7; padding-left:1.2em;">
+                  <li><strong>Direct Expertise:</strong> Work one-on-one with a seasoned professional—no intermediaries, just results.</li>
+                  <li><strong>Tailored Solutions:</strong> Every project is custom-designed for your unique needs, brand, and objectives.</li>
+                  <li><strong>Security-Driven:</strong> Cybersecurity best practices are integrated into every solution from day one.</li>
+                  <li><strong>Transparent Process:</strong> Clear communication, honest advice, and full visibility at every step.</li>
+                  <li><strong>Long-Term Commitment:</strong> Ongoing support and partnership to help you adapt and grow in a changing digital world.</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -163,68 +375,69 @@
     <!-- Services & Products Section -->
     <section id="services-products" class="py-5 gradient-section text-center">
       <div class="container">
-        <h2 class="fw-bold">What We Offer</h2>
-        <div class="row justify-content-center">
-          <div class="col-12">
-            <div class="card p-3 mx-auto" style="max-width: 500px">
-              <img
-                src="Images/SaaS.png"
-                class="card-img-top img-fluid"
-                alt="SaaS Products"
-              />
-              <div class="card-body">
-                <h4 class="card-title">SaaS Products</h4>
-                <p class="card-text">
-                  We develop cloud-based solutions to streamline business
-                  operations and enhance productivity.
-                </p>
+        <h2 class="fw-bold mb-3 section-title" style="font-size:2.2rem; letter-spacing:1.2px;">What I Offer</h2>
+        <p class="mb-4" style="color:#b0c4d8; font-size:1.13rem; max-width:700px; margin:auto;">
+          Unlock your business potential with tailored, secure, and innovative technology solutions. Every service is delivered with a commitment to excellence, transparency, and measurable results.
+        </p>
+        <div class="mb-4" style="color:#7fd6ff; font-size:1.02rem; font-style:italic;">
+          Trusted by entrepreneurs, professionals, and organizations seeking reliable digital transformation.
+        </div>
+        <div class="row justify-content-center align-items-stretch" style="gap:2rem 0;">
+          <div class="col-12 col-md-6 mb-4 d-flex">
+            <div class="card card-modern p-0 mx-auto shadow-lg border-0 flex-fill h-100" style="max-width: 480px; min-width: 270px; overflow:hidden; display:flex; flex-direction:column; position:relative;">
+              <div style="background: linear-gradient(90deg, #00c3ff 0%, #654ea3 100%); height: 7px;"></div>
+              <div style="position:relative;">
+                <img
+                  src="Images/Custom Websites.png"
+                  srcset="Images/Custom Websites.png 1x, Images/Custom Websites.png 2x"
+                  sizes="(max-width: 600px) 100vw, 480px"
+                  class="card-img-top img-fluid"
+                  alt="Custom Software & Web Solutions"
+                  style="height: 200px; object-fit: cover; border-radius: 0 0 0 0; filter:brightness(0.97) contrast(1.08); border-bottom:2px solid #00c3ff; image-rendering:auto;"
+                  width="480" height="200" loading="lazy" decoding="async"
+                />
+              </div>
+              <div class="card-body d-flex flex-column justify-content-between" style="flex:1 1 auto;">
+                <h4 class="card-title mb-2" style="font-size:1.28rem; font-weight:700; color:#00c3ff;">Custom Software & Web Solutions</h4>
+                <ul class="mb-3 text-start" style="font-size:1.07rem; color:#b0c4d8; line-height:1.7; padding-left:1.2em;">
+                  <li><strong>Professional Websites & Apps:</strong> Bespoke, high-performance platforms designed for your brand, audience, and business goals.</li>
+                  <li><strong>Business Automation:</strong> Streamline operations with custom dashboards, integrations, and workflow tools.</li>
+                  <li><strong>Scalable SaaS Development:</strong> Launch and grow your own cloud-based products with robust, future-proof architecture.</li>
+                  <li><strong>Personalized Collaboration:</strong> Direct, expert guidance from concept to launch and beyond.</li>
+                </ul>
+                <hr style="border-top:1px solid #23304a; margin:0.5rem 0 1rem 0;">
+                <a href="softwareDevelopment.html" class="btn btn-gradient mt-auto px-4 py-2 shadow-sm" style="font-weight:700; font-size:1.08rem; letter-spacing:0.5px; border-radius: 8px; transition: background 0.2s, box-shadow 0.2s; box-shadow: 0 4px 16px rgba(0,195,255,0.13); background: linear-gradient(90deg, #00c3ff 0%, #654ea3 100%); color: #fff; border: none;">
+                  <i class="bi bi-code-slash me-2"></i>Discover Software Solutions
+                </a>
               </div>
             </div>
           </div>
-          <div class="col-12">
-            <div class="card p-3 mx-auto" style="max-width: 500px">
-              <img
-                src="Images/Wordpress.jpg"
-                class="card-img-top img-fluid"
-                alt="WordPress Sites"
-              />
-              <div class="card-body">
-                <h4 class="card-title">WordPress Sites</h4>
-                <p class="card-text">
-                  Tailored WordPress sites for businesses, e-commerce, and
-                  blogs.
-                </p>
+          <div class="col-12 col-md-6 mb-4 d-flex">
+            <div class="card card-modern p-0 mx-auto shadow-lg border-0 flex-fill h-100" style="max-width: 480px; min-width: 270px; overflow:hidden; display:flex; flex-direction:column; position:relative;">
+              <div style="background: linear-gradient(90deg, #2c5364 0%, #203a43 100%); height: 7px;"></div>
+              <div style="position:relative;">
+                <img
+                  src="Images/Cybersecurity.jpg"
+                  srcset="Images/Cybersecurity.jpg 1x, Images/Cybersecurity.jpg 2x"
+                  sizes="(max-width: 600px) 100vw, 480px"
+                  class="card-img-top img-fluid"
+                  alt="Cybersecurity Solutions"
+                  style="height: 200px; object-fit: cover; border-radius: 0 0 0 0; filter:brightness(0.97) contrast(1.08); border-bottom:2px solid #2c5364; image-rendering:auto;"
+                  width="480" height="200" loading="lazy" decoding="async"
+                />
               </div>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="card p-3 mx-auto" style="max-width: 500px">
-              <img
-                src="Images/Custom Websites.png"
-                class="card-img-top img-fluid"
-                alt="Custom Web Solutions"
-              />
-              <div class="card-body">
-                <h4 class="card-title">Custom Web Solutions</h4>
-                <p class="card-text">
-                  Custom-made websites and applications tailored to suit your
-                  needs.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="card p-3 mx-auto" style="max-width: 500px">
-              <img
-                src="Images/AI.png"
-                class="card-img-top img-fluid"
-                alt="AI Solutions"
-              />
-              <div class="card-body">
-                <h4 class="card-title">AI Solutions</h4>
-                <p class="card-text">
-                  AI solutions to enhance your digital experiences.
-                </p>
+              <div class="card-body d-flex flex-column justify-content-between" style="flex:1 1 auto;">
+                <h4 class="card-title mb-2" style="font-size:1.28rem; font-weight:700; color:#00c3ff;">Cybersecurity Solutions</h4>
+                <ul class="mb-3 text-start" style="font-size:1.07rem; color:#b0c4d8; line-height:1.7; padding-left:1.2em;">
+                  <li><strong>Comprehensive Risk Assessment:</strong> Identify, prioritize, and mitigate vulnerabilities before they impact your business.</li>
+                  <li><strong>Advanced Protection & Monitoring:</strong> Safeguard your digital assets with proactive, real-time security solutions.</li>
+                  <li><strong>Expert Training & Advisory:</strong> Equip your team with actionable, up-to-date security knowledge and best practices.</li>
+                  <li><strong>Continuous Support:</strong> Ongoing monitoring, rapid response, and strategic advice for lasting peace of mind.</li>
+                </ul>
+                <hr style="border-top:1px solid #23304a; margin:0.5rem 0 1rem 0;">
+                <a href="cyberSecurity.html" class="btn btn-gradient mt-auto px-4 py-2 shadow-sm" style="font-weight:700; font-size:1.08rem; letter-spacing:0.5px; border-radius: 8px; transition: background 0.2s, box-shadow 0.2s; box-shadow: 0 4px 16px rgba(0,195,255,0.13); background: linear-gradient(90deg, #2c5364 0%, #203a43 100%); color: #fff; border: none;">
+                  <i class="bi bi-shield-check me-2"></i>Explore Cybersecurity Expertise
+                </a>
               </div>
             </div>
           </div>
@@ -235,55 +448,28 @@
     <!-- Contact Section -->
     <section id="contact" class="py-5 text-center">
       <div class="container">
-        <h2 class="fw-bold">Contact Us</h2>
-        <p class="mb-4 text-muted">
-          Have questions or need a custom solution? Reach out to us.
+        <h2 class="fw-bold section-title mb-4">Contact Me</h2>
+        <p class="mb-5" style="color:#b0c4d8; font-size:1.1rem;">
+          Have questions or need a custom solution? Reach out directly—I'm here to help you.<br>
+          I typically respond within a few hours.
         </p>
-
-        <div class="d-flex justify-content-center">
-          <div
-            class="card shadow-lg border-0"
-            style="max-width: 400px; width: 100%"
-          >
-            <!-- Card Header -->
-            <div
-              class="card-header text-white text-center py-3"
-              style="
-                background: linear-gradient(45deg, #007bff, #00bcd4);
-                border-radius: 8px 8px 0 0;
-              "
-            >
-              <h4 class="mb-0">Get in Touch</h4>
-            </div>
-
-            <!-- Card Body -->
-            <div class="card-body p-4 bg-light">
-              <!-- WhatsApp -->
-              <div class="mb-4 d-flex align-items-center">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6">
+            <div class="card shadow-lg border-0 p-4" style="background:#232b3a; color:#e3e6ee; border-radius:18px;">
+              <div class="mb-4">
                 <i class="bi bi-whatsapp text-success fs-2"></i>
-                <div class="ms-3 text-start">
-                  <h6 class="mb-1 text-muted">WhatsApp</h6>
-                  <a
-                    href="https://wa.me/254748693539"
-                    class="text-dark fw-bold fs-5 text-decoration-none"
-                  >
-                    +254 748 693 539
-                  </a>
-                </div>
+                <span class="ms-2 fs-5">WhatsApp:</span>
+                <a href="https://wa.me/254748693539" class="text-info fw-bold fs-5 text-decoration-none ms-2" style="word-break:break-all;">+254 748 693 539</a>
               </div>
-
-              <!-- Email -->
-              <div class="d-flex align-items-center">
+              <div class="mb-4">
                 <i class="bi bi-envelope-fill text-primary fs-2"></i>
-                <div class="ms-3 text-start">
-                  <h6 class="mb-1 text-muted">Email</h6>
-                  <a
-                    href="mailto:cooltechsoftware@outlook.com"
-                    class="text-dark fw-bold fs-5 text-decoration-none"
-                  >
-                    cooltechsoftware@outlook.com
-                  </a>
-                </div>
+                <span class="ms-2 fs-5">Email:</span>
+                <a href="mailto:cooltechsoftware@outlook.com" class="text-info fw-bold fs-5 text-decoration-none ms-2" style="word-break:break-all;">cooltechsoftware@outlook.com</a>
+              </div>
+              <div class="mb-2">
+                <i class="bi bi-geo-alt-fill text-danger fs-2"></i>
+                <span class="ms-2 fs-5">Location:</span>
+                <span class="ms-2 fs-5">Kiambu, Kenya</span>
               </div>
             </div>
           </div>
@@ -292,10 +478,21 @@
     </section>
 
     <!-- Footer -->
-    <footer class="text-center p-3 bg-dark text-white">
+    <footer class="footer text-center">
       <p>&copy; 2025 Cooltech Software. All rights reserved.</p>
     </footer>
-
+    <script>
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const target = document.querySelector(this.getAttribute('href'));
+          if(target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
