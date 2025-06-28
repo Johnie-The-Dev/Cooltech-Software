@@ -45,10 +45,8 @@ h2 {
     border-radius: 12px;
     padding: 1.5rem;
     box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-    transition: transform 0.2s, box-shadow 0.2s;
 }
 .solution:hover {
-    transform: translateY(-8px) scale(1.03);
     box-shadow: 0 8px 32px rgba(0,195,255,0.15);
 }
 .solution img {
@@ -63,6 +61,11 @@ footer {
     padding: 1.5rem 0;
     color: #aaa;
     font-size: 1rem;
+}
+/* Remove all card/solution animations and transitions */
+.solution, .solution * {
+  transition: none !important;
+  animation: none !important;
 }
 @media (max-width: 700px) {
     .container {

@@ -34,29 +34,47 @@ h2 {
     padding: 2rem 2.5rem;
 }
 .services {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 1.5rem;
+  justify-content: center;
+  margin: 2.5rem 0 2rem 0;
 }
 .service {
-    flex: 1 1 250px;
-    background: #16222a;
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-    transition: transform 0.2s, box-shadow 0.2s;
+  background: linear-gradient(120deg, #232b3a 80%, #00c3ff22 100%);
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,195,255,0.08);
+  padding: 2.2rem 1.5rem 1.5rem 1.5rem;
+  max-width: 340px;
+  min-width: 240px;
+  flex: 1 1 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: none;
+  transition: box-shadow 0.2s, background 0.2s;
+  margin-bottom: 1.2rem;
 }
-.service:hover {
-    transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 8px 32px rgba(0,195,255,0.15);
+.service:hover, .service:focus, .service:active {
+  /* Remove all hover effects */
+  box-shadow: none !important;
+  transform: none !important;
+  filter: none !important;
+  background: inherit !important;
 }
 .service h3 {
-    color: #00c3ff;
-    margin-bottom: 0.7rem;
+  color: #00c3ff;
+  font-size: 1.18rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
 }
-ul {
-    margin: 1rem 0 0 1.2rem;
+.service ul {
+  font-size: 1.05rem;
+  color: #b0c4d8;
+  line-height: 1.7;
+  padding-left: 1.2em;
+  margin-bottom: 0;
 }
 .cta {
     text-align: center;
@@ -78,6 +96,18 @@ footer {
     padding: 1.5rem 0;
     color: #aaa;
     font-size: 1rem;
+}
+@media (max-width: 900px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem 0;
+  }
+  .service {
+    max-width: 100%;
+    min-width: 0;
+    width: 100%;
+  }
 }
 @media (max-width: 700px) {
     .container {

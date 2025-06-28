@@ -252,3 +252,11 @@ a:focus, button:focus, .btn:focus {
   outline: 2px solid #00c3ff;
   outline-offset: 2px;
 }
+.card.card-modern:hover, .card.card-modern:focus, .card.card-modern:active {
+  /* Remove all hover effects */
+  box-shadow: none !important;
+  transform: none !important;
+  filter: none !important;
+  background: inherit !important;
+  /* If any color/gradient change on hover, reset to default */
+}

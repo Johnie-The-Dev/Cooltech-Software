@@ -7,6 +7,12 @@
     <link rel="icon" href="Images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="cyberSecurity.css" rel="stylesheet">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://cooltechsoftware.com https://cdn.jsdelivr.net; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; connect-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), fullscreen=(self)">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
 </head>
 <body>
     <header>
@@ -95,16 +101,15 @@
           <h3 style="color:#fff; font-size:1.13rem; margin-bottom:1.1rem; letter-spacing:0.5px;">Verified Credentials</h3>
           <p style="color:#b0c4d8; font-size:1.01rem; margin-bottom:0.7rem;">Click a badge to view its official credential and details.</p>
           <div id="badge-gallery" style="display:flex; justify-content:center; gap:2.8rem; flex-wrap:wrap; margin-top:1.5rem; align-items:flex-start;">
-            <div style="background:#232b3a; border:2px solid #00c3ff; border-radius:16px; box-shadow:0 4px 18px rgba(0,195,255,0.13); padding:1.1rem 1.2rem; display:flex; flex-direction:column; align-items:center; min-width:170px; max-width:230px; transition:box-shadow 0.2s;">
-              <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="3d814b3a-5047-4156-ab27-86891d67b20c" data-share-badge-host="https://www.credly.com"></div>
+            <a href="https://www.credly.com/badges/3d814b3a-5047-4156-ab27-86891d67b20c/public_url" target="_blank" rel="noopener noreferrer" style="background:#232b3a; border:2px solid #00c3ff; border-radius:16px; box-shadow:0 4px 18px rgba(0,195,255,0.13); padding:1.1rem 1.2rem; display:flex; flex-direction:column; align-items:center; min-width:170px; max-width:230px; text-decoration:none; margin-bottom:1.2rem;">
+              <img src="Images/introduction-to-cybersecurity.png" srcset="Images/introduction-to-cybersecurity.webp 1x, Images/introduction-to-cybersecurity.png 2x" alt="Introduction to Cybersecurity Badge" width="120" height="120" style="border-radius:12px; margin-bottom:0.8rem; background:#fff; object-fit:cover;" loading="lazy" decoding="async" />
               <span style="margin-top:0.8rem; color:#fff; font-size:1.08rem; font-weight:700; letter-spacing:0.2px; text-shadow:0 2px 8px rgba(0,195,255,0.10);">Introduction to Cybersecurity</span>
-            </div>
-            <div style="background:#232b3a; border:2px solid #00c3ff; border-radius:16px; box-shadow:0 4px 18px rgba(0,195,255,0.13); padding:1.1rem 1.2rem; display:flex; flex-direction:column; align-items:center; min-width:170px; max-width:230px; transition:box-shadow 0.2s;">
-              <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="191e69af-e861-4e3d-86d8-5798896903e0" data-share-badge-host="https://www.credly.com"></div>
+            </a>
+            <a href="https://www.credly.com/badges/191e69af-e861-4e3d-86d8-5798896903e0/public_url" target="_blank" rel="noopener noreferrer" style="background:#232b3a; border:2px solid #00c3ff; border-radius:16px; box-shadow:0 4px 18px rgba(0,195,255,0.13); padding:1.1rem 1.2rem; display:flex; flex-direction:column; align-items:center; min-width:170px; max-width:230px; text-decoration:none; margin-bottom:1.2rem;">
+              <img src="Images/linux-unhatched.png" srcset="Images/linux-unhatched.webp 1x, Images/linux-unhatched.png 2x" alt="Linux Unhatched Badge" width="120" height="120" style="border-radius:12px; margin-bottom:0.8rem; background:#fff; object-fit:cover;" loading="lazy" decoding="async" />
               <span style="margin-top:0.8rem; color:#fff; font-size:1.08rem; font-weight:700; letter-spacing:0.2px; text-shadow:0 2px 8px rgba(0,195,255,0.10);">Linux Unhatched</span>
-            </div>
+            </a>
           </div>
-          <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
         </div>
     </div>
     <footer>
