@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://cooltechsoftware.com/sitemap.xml
