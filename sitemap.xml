@@ -16,5 +16,13 @@
     <loc>https://cooltechsoftware.com/cyberSecurityForDummies.html</loc>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://cooltechsoftware.com/itServices.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cooltechsoftware.com/computingForDummies.html</loc>
+    <priority>0.8</priority>
+  </url>
   <!-- Images directory and assets are not listed as separate pages -->
 </urlset>
